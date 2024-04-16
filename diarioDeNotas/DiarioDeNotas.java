@@ -7,20 +7,17 @@ public class DiarioDeNotas{
         String usuario  = sc.nextLine();
 
          if(usuario.equalsIgnoreCase("Professor")){
-            System.out.println("Digite o seu nome");
-            String nome  = sc.nextLine();
-            System.out.println("Ola Professor" + nome + "seja bem vindo ");
+         Professor professor = new Professor();
+         professor.identificarProfessor();
 
          }else if(usuario.equalsIgnoreCase("Aluno")){
-            System.out.println("Digite o seu nome");
-            String nome  = sc.nextLine();
-            System.out.println("Ola Aluno " + nome + " seja bem vindo ");
+            Aluno aluno = new Aluno();
+            aluno.identificarAluno();
 
          }else{
             System.out.println("Opção invalida ");
 
          }
-         sc.close();
 
     }
 
